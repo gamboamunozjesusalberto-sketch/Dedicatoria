@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Lluvia de estrellas (se dibuja con JavaScript) -->
+  <canvas id="cielo" class="cielo"></canvas>
+  <div id="flotantes" class="flotantes"></div>
+
+  <!-- ================= PORTADA: SOBRE QUE SE ABRE ================= -->
+  <div id="portada" class="portada">
+    <p class="portada-texto">Tienes una carta nueva</p>
+    <button id="btn-abrir" class="sobre-btn" aria-label="Abrir carta">
+      <span class="sobre-tapa"></span>
+      <span class="sobre-carta">💗</span>
+      <span class="sobre-cuerpo"></span>
+      <span class="sobre-sello">♥</span>
+    </button>
+    <p class="portada-pista">toca el sobre</p>
+  </div>
+
+  <main id="contenido" class="contenido oculto">
+
+    <!-- ================= ENCABEZADO ================= -->
+    <header class="hero">
+      <div class="hero-fotos">
+        <figure class="fotito fotito-hero"><img src="img/principal.jpg" alt="Nosotros"></figure>
+        <img class="sticker st-a" src="img/stickers/gatitos.png" alt="">
+        <img class="sticker st-b" src="img/stickers/corazones-rojos.png" alt="">
+      </div>
+      <h1 id="titulo" class="titulo-script" data-texto="Una pequeña entrada a lo que podría ser un nosotros..."></h1>
+      <p class="hero-sub">Desliza despacito ↓</p>
+    </header>
+
+    <!-- ================= CARTITA 1 ================= -->
+    <section class="cartita izq">
+      <span class="cinta"></span>
+      <figure class="fotito pegada der"><img src="img/salida2.jpg" alt="" style="object-position:60% 40%"><figcaption>nosotros</figcaption></figure>
+      <h2>Antes que nada…</h2>
+      <p>Te pido perdón de antemano. Sé que no soy precisamente el hombre más romántico del mundo, que quizás no siempre encuentro las palabras adecuadas y que, en ocasiones, mi manera de expresar lo que siento no es la más convencional. Pero hay algo que creo que no necesitas que te diga, porque puedes verlo en mis ojos cada vez que te miro, o incluso en mis manos, que parecen olvidar cómo comportarse cada vez que rozan las tuyas.</p>
+      <p class="frase-grande">Me gustas. Y creo que eso ya es bastante evidente.</p>
+    </section>
+
+    <!-- ================= CARTITA 2 ================= -->
+    <section class="cartita der">
+      <span class="cinta"></span>
+      <img class="sticker st-esquina" src="img/stickers/gato-flores.png" alt="">
+      <h2>Mi pequeño mundo de fantasías</h2>
+      <p>Vivo en un pequeño mundo de fantasías en el que, de una u otra manera, siempre apareces tú. A veces me descubro imaginando momentos que todavía no suceden, conversaciones que aún no tenemos y lugares que algún día podríamos conocer. Y si eso no es amor, sinceramente, no sé qué nombre darle. Lo que sí sé es que quiero seguir descubriendo esta sensación, conocer cada una de sus formas y entender por qué alguien como tú puede provocar tantas cosas en alguien como yo.</p>
+      <p>No quiero apresurarme a ponerle un nombre a todo lo que siento, pero tampoco quiero hacer como si no estuviera pasando. <strong>Me gustas, me encantas y quiero seguir conociéndote.</strong> Quiero descubrir esas pequeñas partes de ti que todavía no conozco, esas que quizás no le cuentas a cualquiera, esas manías que te hacen ser tú y que, sin darme cuenta, terminan convirtiéndose en mis detalles favoritos.</p>
+    </section>
+
+    <!-- ================= CARTITA 3 ================= -->
+    <section class="cartita izq">
+      <span class="cinta"></span>
+      <figure class="fotito pegada der"><img src="img/huron.jpg" alt="" style="object-position:50% 60%"><figcaption>tú 🤍</figcaption></figure>
+      <h2>Lo que sí puedo darte</h2>
+      <p>Perdóname también por no poder darte, al menos por ahora, todo lo que quisiera. Créeme que, si estuviera en mis posibilidades, me encantaría llenarte de regalos, sorprenderte con pequeños detalles, aparecer con un ramo de flores sin necesidad de que exista una fecha especial y encontrar mil maneras de alegrarte los días. Me gustaría consentirte, invitarte a conocer lugares nuevos, cumplirte antojitos y hacer que tengas muchos motivos para sonreír.</p>
+      <p>Pero mientras llega el momento en el que pueda hacerlo, quiero que sepas que hay algo que sí puedo darte desde ahora:</p>
+      <div class="regalos">
+        <button class="regalo" data-msg="Mi atención 👀">🎁</button>
+        <button class="regalo" data-msg="Mi tiempo ⏳">🎁</button>
+        <button class="regalo" data-msg="Mis ganas de conocerte 💭">🎁</button>
+        <button class="regalo" data-msg="Joderte a diario ✨">🎁</button>
+      </div>
+      <p class="pista">(abre los regalitos)</p>
+      <img class="sticker st-tulipan" src="img/stickers/tulipanes.png" alt="">
+    </section>
+
+    <!-- ================= CARTITA 4 ================= -->
+    <section class="cartita der">
+      <span class="cinta"></span>
+      <h2>Indiscutiblemente hermosa</h2>
+      <p>Porque, si algo tengo claro, es que eres una chica indiscutiblemente hermosa. Y no quiero que pienses que lo digo únicamente por tu físico. Eres <span class="etiqueta">inteligente</span>, <span class="etiqueta">capaz</span>, <span class="etiqueta">perseverante</span> y, sobre todo, tienes una personalidad que me encanta. Aunque debo admitir que esa perseverancia tuya también se hace notar cuando debatimos, porque parece que rendirte no está dentro de tus opciones. Jajajaja.</p>
+      <p>También he podido notar la hermana tan bonita que eres. Cada vez que te escucho hablar de Yeico, cada vez que veo cómo lo cuidas, cómo estás pendiente de él y la manera en la que te preocupas por su bienestar, inevitablemente llegan a mi cabeza pequeñas escenas imaginando cómo serías en un futuro como madre. Y no sé qué nos tenga preparado la vida, pero de algo no tengo dudas: si algún día decides serlo, estoy seguro de que serás maravillosa.</p>
+
+      <!-- Fotitos con Yeico -->
+      <div class="tendedero">
+        <span class="hilo"></span>
+        <figure class="fotito colgada"><img src="img/bebe2.jpg" alt=""><figcaption>con Yeico</figcaption></figure>
+        <figure class="fotito colgada"><img src="img/bebe3.jpg" alt="" style="object-position:50% 30%"></figure>
+        <figure class="fotito colgada"><img src="img/bebe5.jpg" alt="" style="object-position:50% 70%"></figure>
+        <figure class="fotito colgada"><img src="img/bebe1.jpg" alt="" style="object-position:40% 50%"></figure>
+        <figure class="fotito colgada"><img src="img/bebe4.jpg" alt="" style="object-position:50% 75%"></figure>
+      </div>
+
+      <p>Tienes una belleza que va mucho más allá de lo que los ojos pueden apreciar. Eres hermosa por fuera, sí, pero también tienes una forma de ser, de cuidar, de preocuparte y de querer que hace que esa belleza sea todavía más grande.</p>
+      <figure class="fotito pegada izq abajo"><img src="img/pequenita.jpg" alt="" style="object-position:50% 30%"><figcaption>mini tú</figcaption></figure>
+    </section>
+
+    <!-- ================= CARTITA 5: EVIDENCIAS ================= -->
+    <section class="cartita izq">
+      <span class="cinta"></span>
+      <h2>Lista de evidencias 🕵️</h2>
+      <p>Y hablando de conocerte, quiero que sepas algo: quizás tenga una memoria un poquito cuestionable, quizás sea descuidado con algunas cosas y a veces parezca que se me escapan los detalles, pero créeme que contigo hago el esfuerzo de recordar hasta las cosas más pequeñas.</p>
+      <p>Es más, si no me crees, tengo una pequeña lista de evidencias. JAJAJA. <em>(toca cada tarjetita)</em></p>
+
+      <div class="evidencias">
+        <button class="evidencia"><span class="cara frente">🫛<b>Evidencia #1</b></span><span class="cara atras">Cada vez que encuentras alverjitas o pallares en tu plato, terminas quitándolos.</span></button>
+        <button class="evidencia"><span class="cara frente">🌾<b>Evidencia #2</b></span><span class="cara atras">No eres muy fan de la quinua ni de la maca.</span></button>
+        <button class="evidencia"><span class="cara frente">🍽️<b>Evidencia #3</b></span><span class="cara atras">Te estresa muchísimo que alguien pique de un plato cuando podría esperar su turno.</span></button>
+        <button class="evidencia"><span class="cara frente">🎄<b>Evidencia #4</b></span><span class="cara atras">Esperas la Navidad con ilusión porque te trae recuerdos bonitos y especiales.</span></button>
+        <button class="evidencia"><span class="cara frente">🥭<b>Evidencia #5</b></span><span class="cara atras">Te encanta el mango verde… pero en su punto, medio pintón. Hay especificaciones que respetar. Jajajaja.</span></button>
+      </div>
+
+      <p>Recuerdo tus antojitos, esos pequeños deseos que mencionas casi sin darte cuenta. Y quiero que sepas que recuerdo todas esas cosas porque me gusta escucharte. Me gusta cuando me cuentas lo que te gusta, lo que no soportas, lo que te hace feliz e incluso aquello que te molesta. Porque para mí conocerte no consiste solamente en saber cuál es tu color favorito o qué comida prefieres, sino también en aprender esas pequeñas particularidades que te hacen diferente a todas las demás.</p>
+    </section>
+
+    <!-- ================= CARTITA 6: ANTOJITOS ================= -->
+    <section class="cartita der">
+      <span class="cinta"></span>
+      <img class="sticker st-esquina" src="img/stickers/gatito-rosa.png" alt="">
+      <h2>Antojitos pendientes</h2>
+      <p>Quizás hoy no pueda cumplirte todos esos gustitos, quizás todavía tengamos varios lugares pendientes, pero me gustaría que durante este tiempo podamos ir tachando algunas cosas de esta lista:</p>
+      <ul id="lista-antojos" class="lista-antojos">
+        <li><button>🍩 Unos picaroncitos</button></li>
+        <li><button>🐷 Chicharrón de carretilla</button></li>
+        <li><button>🍢 Esos anticuchos pendientes</button></li>
+        <li><button>🍝 Conocer un restaurante nuevo</button></li>
+        <li><button>🌅 Descubrir un lugar bonito</button></li>
+        <li><button>🍧 Probar algo que nunca hayamos probado</button></li>
+        <li><button>📸 Acumular momentos para recordar</button></li>
+      </ul>
+      <p class="pista">(toca uno para tacharlo cuando lo cumplamos)</p>
+      <p>Y no quiero hacerte promesas enormes que después se queden solamente en palabras. Prefiero que, poquito a poquito, podamos construir recuerdos que hablen por sí solos.</p>
+    </section>
+
+    <!-- ================= CARTITA 7 ================= -->
+    <section class="cartita izq">
+      <span class="cinta"></span>
+      <figure class="fotito pegada der"><img src="img/salida1.jpg" alt="" style="object-position:55% 40%"><figcaption>tus hoyuelitos</figcaption></figure>
+      <h2>Qué me hizo fijarme en ti</h2>
+      <p>Ahora bien, creo que debería explicarte qué fue exactamente lo que me hizo fijarme en ti, aunque, siendo sincero, todavía no sé si podría enumerar una sola razón.</p>
+      <p class="frase-grande">Me enamoré de tu personalidad.</p>
+      <p>De esa manera tan tuya de hacerme reír incluso cuando estoy con mi característica cara de poto. De cómo se te forman esos dos hoyuelitos en los cachetes cuando sonríes. De ese ojito que se te achina cuando haces alguna de tus miraditas. De tu tonito de voz, ese que, aunque no lo creas, ya vive instalado en mi cabeza y parece que no piensa pagar alquiler.</p>
+      <p>Es curioso, porque incluso cuando hablamos por chat, leo tus mensajes e imagino perfectamente el tono y la emoción con los que los escribiste. A veces hasta reproduzco mentalmente tu voz mientras leo lo que me mandas. Y cuando estamos frente a frente, me descubro imaginando qué podrías responderme incluso antes de que termines de escucharme.</p>
+      <p>Me gusta escucharte, observar tus expresiones, descubrir tus gestos y prestar atención a esas pequeñas cosas que quizás tú haces sin darte cuenta, pero que yo termino guardando en mi memoria.</p>
+      <p>Y no, tu físico tampoco se queda atrás. JAJAJA. Eres <strong>inefablemente hermosa</strong>. Tienes dos bracitos que, debo admitir, parecen hechos para llenarlos de pellizquitos y unas mejillas que tampoco pienso dejar tranquilas. Pero más allá de las bromas, hay algo que me encanta todavía más: esa combinación entre tu belleza y esa personalidad tan simpática que tienes.</p>
+      <p>Porque puedes estar frente a mí y, sin hacer demasiado, conseguir que se me escape una sonrisa. Puedes cambiarme el ánimo con una conversación cualquiera, con una ocurrencia o simplemente con tu presencia.</p>
+      <p class="frase-grande">No necesitas hacer nada extraordinario para convertir un momento ordinario en uno que quiera recordar.</p>
+      <figure class="fotito pegada izq abajo"><img src="img/salida3.jpg" alt="" style="object-position:60% 50%"><figcaption>salidita</figcaption></figure>
+    </section>
+
+    <!-- ================= CARTITA 8: MOLESTARTE ================= -->
+    <section class="cartita der">
+      <span class="cinta"></span>
+      <h2>Mi manera de quererte</h2>
+      <p>Perdóname si mi manera de demostrarte cariño no es exactamente a la que estás acostumbrada. Quizás no siempre sea el más detallista, quizás me falten palabras bonitas o no sepa cómo reaccionar ante ciertos momentos románticos. Pero hay algo que quiero que tengas muy presente: <strong>no confundas mi falta de romanticismo con una falta de sentimientos.</strong></p>
+      <p>Porque, si hay una manera en la que definitivamente sé demostrarte cariño, es molestándote.</p>
+      <p>Me encanta joderte. Vivo para joderte. Encuentro cualquier excusa, cualquier oportunidad y cualquier pequeño motivo para fastidiarte un ratito. Y lo peor es que probablemente nunca me canse de hacerlo. Así que, si alguna vez te preguntas cuál es una de mis mayores muestras de cariño, recuerda que tienes a alguien dispuesto a sacarte de quicio solamente para conseguir que te rías.</p>
+      <div class="molestar">
+        <button id="btn-molestar" class="boton boton-chico">No toques este botón</button>
+        <span id="molestar-msg" class="molestar-msg"></span>
+      </div>
+      <div class="stickers-fila">
+        <img class="sticker-redondo" src="img/stickers/pantera.jpg" alt="">
+        <img class="sticker-redondo" src="img/stickers/oso.jpg" alt="">
+        <img class="sticker-redondo" src="img/stickers/conejito.jpg" alt="">
+        <img class="sticker-redondo" src="img/stickers/hamster.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- ================= CARTITA 9 ================= -->
+    <section class="cartita izq">
+      <span class="cinta"></span>
+      <img class="sticker st-esquina" src="img/stickers/corazones-rosa.png" alt="">
+      <h2>Lo que quiero ser para ti</h2>
+      <p>Aunque también quiero ser esa persona con la que puedas hablar cuando no tengas un buen día, con quien puedas compartir tus preocupaciones sin sentir que tienes que fingir que todo está bien. Quiero escucharte cuando tengas mucho que contar y acompañarte incluso cuando no tengas ganas de decir absolutamente nada.</p>
+      <p>Quiero conocer tus días buenos, pero también aprender a acompañarte en los no tan buenos. Quiero celebrar tus logros, emocionarme con tus pequeñas victorias y recordarte lo capaz que eres cuando tú misma llegues a dudarlo.</p>
+      <p>No pretendo ser alguien perfecto, porque definitivamente no lo soy. Tengo mis defectos, mis descuidos, mis ocurrencias y probablemente muchas cosas por mejorar. Pero sí quiero ser alguien que te permita sentirte tranquila, querida, valorada y libre de ser tú misma.</p>
+      <p>Y si algo me gustaría pedirte es que nunca sientas que tienes que cambiar tu manera de ser para agradarme. Me gusta esa chica que se ríe, que bromea, que debate hasta el último argumento literal, que tiene sus antojitos, sus manías, sus ocurrencias y sus pequeñas peculiaridades. Me gusta esa versión de ti que aparece cuando estás siendo completamente tú.</p>
+      <p class="frase-grande">Así que no dejes de serlo.</p>
+    </section>
+
+    <!-- ================= CARTITA 10: TERABYTES ================= -->
+    <section class="cartita der">
+      <span class="cinta"></span>
+      <h2>Misión pendiente: 2 TB</h2>
+      <p>Y bueno, creo que esto ya dejó de parecer un simple poema o una dedicatoria. Digamos que quiero que sea la pequeña introducción a lo que podría convertirse en el inicio de algo nuevo. No sé exactamente qué nombre tendrá lo nuestro más adelante, tampoco quiero adelantarme a escribir capítulos que todavía no hemos vivido. Pero sí sé que me gustaría descubrirlos contigo.</p>
+      <p>Quiero que sigamos conociéndonos, que tengamos más conversaciones interminables, más risas, más bromas, más debates en los que probablemente ninguno de los dos quiera dar su brazo a torcer. Quiero más miradas, más momentos inesperados y, sobre todo, más fotografías.</p>
+      <p>Porque, siendo sinceros, nuestra pequeña galería de fotos juntos se está quedando bastante corta:</p>
+
+      <div class="disco">
+        <div class="disco-top"><span>💾 Galería "Nosotros"</span><span id="disco-texto">0 GB de 2 TB</span></div>
+        <div class="disco-barra"><div id="disco-lleno" class="disco-lleno"></div></div>
+      </div>
+
+      <div class="galeria-mini">
+        <img src="img/principal.jpg" alt="">
+        <img src="img/salida1.jpg" alt="">
+        <img src="img/salida2.jpg" alt="">
+        <img src="img/salida3.jpg" alt="">
+        <img src="img/juntos.jpg" alt="">
+        <img src="img/huron.jpg" alt="">
+      </div>
+
+      <p>Así que ya sabes, tenemos una misión pendiente: expandirla. Y no estoy hablando de unos cuantos megas, estoy hablando de un mínimo de dos terabytes contigo. JAJAJA. Aunque, conociéndome, probablemente termine necesitando almacenamiento ilimitado.</p>
+      <p>Quiero que algún día podamos mirar todas esas fotografías y recordar cómo empezó todo. Que podamos ver una foto y decir: «¿Te acuerdas de ese día?», y que detrás de cada imagen exista una historia, una anécdota o alguna tontería que solamente nosotros entendamos.</p>
+    </section>
+
+    <!-- ================= CARTITA 11: FINAL ================= -->
+    <section class="cartita izq final">
+      <span class="cinta"></span>
+      <img class="flor flor-izq" src="img/stickers/lirio.png" alt="">
+      <img class="flor flor-der" src="img/stickers/rosa-blanca.png" alt="">
+      <h2>Apenas estamos comenzando</h2>
+      <p>No sé cuántas páginas nos quedan por escribir, ni qué sorpresas nos tendrá preparadas la vida, pero me gustaría que no tengamos que descubrirlo todo de golpe. Que vayamos despacio, disfrutando cada momento, sin saltarnos ninguna parte de esta historia.</p>
+      <p>Y si me preguntas qué espero de todo esto, creo que mi respuesta es bastante sencilla: <strong>quiero seguir eligiendo conocerte.</strong></p>
+      <p>Quiero seguir descubriendo qué te hace feliz, qué te emociona, qué te da miedo, qué sueños tienes y cuáles son esas pequeñas cosas que todavía no me has contado. Quiero aprender a quererte de la manera en la que te gusta que te quieran, sin dejar de ser yo en el proceso.</p>
+      <p>Así que perdóname si no soy el más romántico, si mis palabras a veces se enredan o si termino haciendo alguna broma justo cuando debería decir algo bonito. Es mi manera de ser, y espero que, entre tantas bromas, también puedas encontrar la sinceridad de todo lo que intento expresarte.</p>
+      <p class="frase-grande">Porque, aunque no siempre sepa cómo decirlo, me gustas muchísimo.</p>
+      <p>Y si hay algo que tengo claro es que todavía me quedan demasiadas cosas por conocer de ti, demasiados lugares por visitar contigo, demasiados antojitos por cumplirte y demasiadas fotografías por tomar.</p>
+      <p>Así que no te me vayas a cansar tan rápido, que apenas estamos comenzando.</p>
+      <p class="firma">Con cariño, el chico que probablemente no sea el más romántico, pero que le encanta joderte.</p>
+    </section>
+
+    <!-- ================= CUENTA REGRESIVA (8 de diciembre, 3 p.m.) ================= -->
+    <section class="cuenta">
+      <img class="sticker st-cuenta" src="img/stickers/sobre-pixel.png" alt="">
+      <h2>La espera valdrá la pena</h2>
+      <p class="cuenta-sub">Cada segundo que pasa es un segundo menos para volver a verte ✨</p>
+      <div id="cuenta-regresiva" class="cuenta-numeros">
+        <div><strong data-u="d">0</strong><span>días</span></div>
+        <div><strong data-u="h">0</strong><span>horas</span></div>
+        <div><strong data-u="m">0</strong><span>minutos</span></div>
+        <div><strong data-u="s">0</strong><span>segundos</span></div>
+      </div>
+      <p class="cuenta-fecha">8 de diciembre · 3:00 p.m.</p>
+    </section>
+
+    <!-- ================= PREGUNTA FINAL ================= -->
+    <section class="pregunta">
+      <h2>¿Seguimos escribiendo esta historia?</h2>
+      <div class="pregunta-botones">
+        <button id="btn-si" class="boton">Sí 💗</button>
+        <button id="btn-no" class="boton boton-gris">No</button>
+      </div>
+      <p id="respuesta" class="respuesta"></p>
+      <button id="btn-deseo" class="boton boton-chico">🌠 Pide un deseo</button>
+    </section>
+
+    <footer class="pie">Hecho con ♥ (y muchas bromas) para ti</footer>
+  </main>
+
+  <!-- Foto ampliada al tocarla -->
+  <div id="visor" class="visor oculto"><img id="visor-img" src="" alt=""></div>
+
+  <!-- ================= REPRODUCTOR ================= -->
+  <div id="reproductor" class="reproductor oculto">
+    <button id="btn-play" class="btn-play" aria-label="Reproducir">▶</button>
+    <div class="info-cancion">
+      <!-- CAMBIA: nombre de la canción -->
+      <span class="nombre-cancion">Coming Up Roses (Instrumental)</span>
+      <div class="barra"><div id="progreso" class="progreso"></div></div>
+    </div>
+  </div>
+
+  <!-- CAMBIA: pon tu canción en la carpeta audio/ con el nombre cancion.mp3 -->
+  <audio id="musica" src="audio/cancion.mp3" loop></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
